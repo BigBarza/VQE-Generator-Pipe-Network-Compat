@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <PipeSystem.PipeNetDef>
+        <defName>ARCUraniumNet</defName>
+        <resource>
+            <name>Uranium</name>
+            <unit>u</unit>
+            <color>(100,100,100)</color>
+            <onlyShowStored>True</onlyShowStored>
+            <offTexPath>Things/Item/Resource/Uranium/Uranium_c</offTexPath>
+        </resource>
+        <pipeDefs>
+          <li>PipedARC_UraniumPipe</li>
+          <li>PipedARC_HiddenUraniumPipe</li>
+        </pipeDefs>
+        <designator>
+          <deconstructIconPath>UI/UraniumPipes_Deconstruct</deconstructIconPath>
+          <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
+        </designator>
+        <overlayOptions>
+            <overlayColor>(100,100,100)</overlayColor>
+        </overlayOptions>
+        <linkToRefuelables>
+            <li>
+                <thing>Uranium</thing>
+                <ratio>1</ratio>
+            </li>
+        </linkToRefuelables>
+    </PipeSystem.PipeNetDef>
+
+    <ThingDef ParentName="BuildingBase">
+      <defName>PipedARC_UraniumPipe</defName>
+      <label>uranium pipe</label>
+      <description>Piping designed to deliver uranium safely and automatically.</description>
+      <thingClass>PipeSystem.Building_Pipe</thingClass>
+      <category>Building</category>
+      <tickerType>Rare</tickerType>
+      <graphicData>
+        <texPath>Things/UraniumPipeAtlas</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <linkType>Basic</linkType>
+        <linkFlags>
+          <li>Custom7</li>
+        </linkFlags>
+        <damageData>
+          <rect>(0,0.35,1,0.3)</rect>
+        </damageData>
+      </graphicData>
+    <uiIconPath>Things/UraniumPipe_MenuIcon</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/UraniumPipeBlueprintAtlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>2</Steel>
+    </costList>
+    <comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>ARCUraniumNet</pipeNet>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PipeSystem.PlaceWorker_Pipe</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+    </ThingDef>
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>PipedARC_HiddenUraniumPipe</defName>
+    <label>hidden uranium pipe</label>
+    <description>Hidden piping designed to deliver uranium safely and automatically.</description>
+    <thingClass>PipeSystem.Building_Pipe</thingClass>
+    <category>Building</category>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>UI/CSG/IConduit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom7</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/HiddenUraniumPipe_MenuIcon</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/UraniumPipeBlueprintAtlas</texPath>
+      </blueprintGraphicData>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <isTargetable>false</isTargetable>
+      <expandHomeArea>false</expandHomeArea>
+      <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>48</MaxHitPoints>
+      <WorkToBuild>280</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>4</Steel>
+    </costList>
+    <comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>ARCUraniumNet</pipeNet>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PipeSystem.PlaceWorker_Pipe</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>PipedARC_UraniumHopper</defName>
+        <label>uranium input hopper</label>
+        <description>A small hopper that can input uranium into connected tanks.</description>
+        <thingClass>Building_Storage</thingClass>
+        <graphicData>
+      <texPath>Things/UraniumHopper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>60</Steel>
+    </costList>
+
+     <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ConvertThingToResource">
+        <pipeNet>ARCUraniumNet</pipeNet>
+        <thing>Uranium</thing>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+      <defName>PipedARC_UraniumValve</defName>
+      <label>uranium valve</label>
+      <description>Can be switched to block the flow of uranium</description>
+      <thingClass>PipeSystem.Building_PipeValve</thingClass>
+      <category>Building</category>
+      <graphicData>
+        <texPath>Things/UraniumValve/UraniumValve</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>Transparent</shaderType>
+        <damageData>
+          <rect>(0.2,0.2,0.6,0.6)</rect>
+        </damageData>
+      </graphicData>
+      <building>
+        <ai_chillDestination>false</ai_chillDestination>
+        <allowWireConnection>false</allowWireConnection>
+      </building>
+      <altitudeLayer>Building</altitudeLayer>
+      <passability>Standable</passability>
+      <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+      <statBases>
+        <MaxHitPoints>120</MaxHitPoints>
+        <WorkToBuild>200</WorkToBuild>
+        <Flammability>0.0</Flammability>
+        <Beauty>-2</Beauty>
+      </statBases>
+    
+      <costList>
+        <Steel>25</Steel>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <comps>
+        <li Class="PipeSystem.CompProperties_PipeValve">
+          <pipeNet>ARCUraniumNet</pipeNet>
+          <alwaysLinkToPipes>true</alwaysLinkToPipes>
+        </li>
+        <li Class="CompProperties_Flickable">
+          <commandTexture>Things/Item/Resource/Uranium/Uranium_c</commandTexture>
+          <commandLabelKey>PipedARC_UraniumValve</commandLabelKey>
+          <commandDescKey>PipedARC_UraniumValve</commandDescKey>
+        </li>
+      </comps>
+      <rotatable>false</rotatable>
+      <selectable>true</selectable>
+      <neverMultiSelect>false</neverMultiSelect>
+      <tickerType>Normal</tickerType>
+      <designationCategory>VCHE_PipeNetworks</designationCategory>
+      <constructEffect>ConstructMetal</constructEffect>
+      <researchPrerequisites>
+        <li>Machining</li>
+      </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+      <defName>PipedARC_UraniumTank</defName>
+      <label>uranium buffer tank</label>
+      <description>A storage tank capable of holding some uranium. The capacity is not impressive, relegating it as a buffer.</description>
+      <graphicData>
+        <texPath>Things/UraniumTank</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+        <drawRotated>false</drawRotated>
+        <allowFlip>false</allowFlip>
+      </graphicData>
+      <rotatable>false</rotatable>
+      <altitudeLayer>Building</altitudeLayer>
+      <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>ARCUraniumNet</pipeNet>
+        <storageCapacity>150</storageCapacity>
+        <extractOptions>
+          <texPath>UI/ExtractUraniumGizmo</texPath>
+          <labelKey>PipedARC_ExtractUranium</labelKey>
+          <descKey>PipedARC_ExtractUraniumDesc</descKey>
+          <extractAmount>75</extractAmount>
+          <thing>Uranium</thing>
+          <ratio>1</ratio>
+        </extractOptions>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+    </ThingDef>
+    
+
+</Defs>

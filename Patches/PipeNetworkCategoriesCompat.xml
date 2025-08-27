@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    		<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Expanded Pipe Network Categories</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd" MayRequire="broms.pipenetworkcategories">
+						<xpath>Defs/ThingDef[defName="PipedARC_UraniumHopper"][not(designatorDropdown)]</xpath>
+						<value>
+							<designatorDropdown>BromsDrains</designatorDropdown>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd" MayRequire="broms.pipenetworkcategories">
+						<xpath>Defs/ThingDef[defName="PipedARC_UraniumValve"][not(designatorDropdown)]</xpath>
+						<value>
+							<designatorDropdown>BromsValves</designatorDropdown>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd" MayRequire="broms.pipenetworkcategories">
+						<xpath>Defs/ThingDef[defName="PipedARC_UraniumTank"][not(designatorDropdown)]</xpath>
+						<value>
+							<designatorDropdown>BromsTanks</designatorDropdown>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd" MayRequire="broms.pipenetworkcategories">
+						<xpath>Defs/ThingDef[defName="PipedARC_UraniumPipe"][not(designatorDropdown)]</xpath>
+						<value>
+							<designatorDropdown>BromsPipes</designatorDropdown>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd" MayRequire="broms.pipenetworkcategories">
+						<xpath>Defs/ThingDef[defName="PipedARC_HiddenUraniumPipe"][not(designatorDropdown)]</xpath>
+						<value>
+							<designatorDropdown>BromsSubPipes</designatorDropdown>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</Operation>
+
+
+</Patch>

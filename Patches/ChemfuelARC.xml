@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_ChemfuelPowered"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>VCHE_ChemfuelNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_ChemfuelBoosted"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>VCHE_ChemfuelNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_ChemfuelCharged"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>VCHE_ChemfuelNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_ChemfuelFortified"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>VCHE_ChemfuelNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+
+
+
+</Patch>

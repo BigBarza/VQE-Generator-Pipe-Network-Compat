@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_UraniumPowered"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>ARCUraniumNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_Nuclear"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>ARCUraniumNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_Isotopic"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>ARCUraniumNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="VQE_Genetron_Atomic"]/comps
+        </xpath>
+        <value>
+            <li Class="VQEARCFuelLoader.CompPropertiesArcPipeNetHook">
+                <pipeNet>ARCUraniumNet</pipeNet>
+                <ConversionRate>1</ConversionRate>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

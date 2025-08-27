@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>bigbarza.vqegenerator.pipecompat</packageId>
+	<name>VQE Generator - Pipe Network Compat</name>
+	<author>Big Barza</author>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<modDependencies>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+		</li>
+		<li>
+			<packageId>vanillaquestsexpanded.generator</packageId>
+			<displayName>Vanilla Quests Expanded - The Generator</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3411401573</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaQuestsExpanded-TheGenerator</downloadUrl>
+		</li>
+		<li>
+			<packageId>VanillaExpanded.VChemfuelE</packageId>
+			<displayName>Vanilla Chemfuel Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2792917473</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaChemfuelExpanded</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>vanillaquestsexpanded.generator</li>
+		<li>VanillaExpanded.VChemfuelE</li>
+		<li>VanillaExpanded.VFEPower</li>
+		<li>broms.pipenetworkcategories</li>
+	</loadAfter>
+	<description>This mod grants the chemfuel fueled ARCs from Vanilla Quests Expanded - The Generator the ability to connect to the chemfuel pipe network from Vanilla Chemfuel Expanded.
+It also adds a small uranium pipe network, and lets uranium fueled ARCs connect to it to efficiently maintain the desired uranium level.
+
+Credits to Oskar Potocki and the Vanilla Expanded team for creating the original mods.</description>
+</ModMetaData>

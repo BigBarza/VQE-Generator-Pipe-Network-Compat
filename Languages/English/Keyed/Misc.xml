@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <PipedARC_ExtractUranium>Extract 75 uranium</PipedARC_ExtractUranium>
+  <PipedARC_ExtractUraniumDesc>Extract 75 uranium from the tank. A pawn will come to extract it.</PipedARC_ExtractUraniumDesc>
+  <PipedARC_UraniumValve>Switch uranium flow.</PipedARC_UraniumValve>
+  <PipedARC_UraniumValveDesc>Switches uranium flow on/off. A pawn will come open/close the valve.</PipedARC_UraniumValveDesc>
+</LanguageData>

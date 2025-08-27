@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="PipedARC_UraniumPipe"]
+        </xpath>
+        <value>
+            <placingDraggableDimensions>1</placingDraggableDimensions>
+        </value>
+    </Operation>
+        <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[defName="PipedARC_HiddenUraniumPipe"]
+        </xpath>
+        <value>
+            <placingDraggableDimensions>1</placingDraggableDimensions>
+        </value>
+    </Operation>
+</Patch>
