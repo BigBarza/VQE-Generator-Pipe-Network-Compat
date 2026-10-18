@@ -80,7 +80,7 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-	  <Compile Include="ARCNetRefuel.cs" />
+	  <Compile Include="ARCPipeNetConnector.cs" />
 	</ItemGroup>
 
 	<!-- File list -->

@@ -57,6 +57,7 @@
       </blueprintGraphicData>
     </building>
     <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Conduits</drawStyleCategory>
     <altitudeLayer>Conduits</altitudeLayer>
     <passability>Standable</passability>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -122,6 +123,7 @@
       <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
     </building>
     <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Conduits</drawStyleCategory>
     <altitudeLayer>Conduits</altitudeLayer>
     <passability>Standable</passability>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>

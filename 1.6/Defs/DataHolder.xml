@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef>
+        <defName>PipedARC_DummyHolder</defName>
+        <label>dummy list of ARCs that need to be connected</label>
+        <thingClass>Verse.Thing</thingClass>
+        <modExtensions>
+            <li Class="VQEARCFuelLoader.ArcListModExtension">
+                <ARCS>
+                    <li>VQE_Genetron_WoodPowered</li>
+                    <li>VQE_Genetron_WoodBlasting</li>
+                    <li>VQE_Genetron_ChemfuelPowered</li>
+                    <li>VQE_Genetron_ChemfuelBoosted</li>
+                    <li>VQE_Genetron_ChemfuelCharged</li>
+                    <li>VQE_Genetron_ChemfuelFortified</li>
+                    <li>VQE_Genetron_UraniumPowered</li>
+                    <li>VQE_Genetron_Nuclear</li>
+                    <li>VQE_Genetron_Isotopic</li>
+                    <li>VQE_Genetron_Atomic</li>
+                </ARCS>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>
